@@ -139,12 +139,9 @@
     .result{
         width: 95%;
     }
-    .controls{
-        width: 90%;
-    }     
     .controls {
         font-size: 0.8em;
-        width: 80%;
+        width: 95%;
         gap: 0.2em;
     }
     .walkthrough{
