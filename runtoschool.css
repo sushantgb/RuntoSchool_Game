@@ -146,5 +146,8 @@
     }
     .walkthrough{
         width: 70%;
-    } 
+    }
+    .lives{
+        padding: 0.8em;
+    }
 }
