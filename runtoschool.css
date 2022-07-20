@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(250deg, rgb(89, 71, 71), grey);
+
+}
+
+/* landing, game and result sections */
+.landing,
+.game,
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(140deg, rgb(254, 68, 108), rgb(228, 80, 157));
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 80%;
+    padding: 2em;
+    box-shadow: 1px 2px 10px black;
+    border-radius: 0.2em;
+}
+/* specific styling for game section */
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-image: url("home.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    object-fit: fill;
+    height: 70vh;
+}
+/* control-value section for displaying lives, button and instructions */
+.control-values{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+/* controls div within control-values section */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 0.5em;
+}
+
+/* instruction class styling */
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+/* lives class styling */
+.lives {
+    display: flex;
+    width: 20%;
+    gap: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.8em;
+    border-radius: 0.2em;
+    color: red;
+}
+
+/* buttons to start, select (within game) and replay */
+.start,
+.selection,
+.replay {
+    padding: 0.8em;
+    width: 30%;
+    border-radius: 0.2em;
+    border-style: none;
+    background-color: white;
+    color: purple;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+/* hover effects for buttons */
+.start:hover,
+.selection:hover,
+.replay:hover {
+    opacity: 0.9;
+}
+.selection:disabled{
+    cursor:default;
+    opacity: 0.5;
+}
+
+/* walkthrough and message classes styling to display instructions */
+.walkthrough,
+.message {
+    display: none;
+    background-color: white;
+    color: purple;
+    padding: 0.8em;
+    border-radius: 0.2em;
+    width: 50%;
+    text-align: center;
+}
+
+
+/* for result page heading */
+.result h1 {
+    text-align: center;
+}
+
+/* for responsiveness */
+@media screen and (max-width:900px) {
+    .landing,
+    .game,
+    .result{
+        width: 95%;
+    }
+    .controls {
+        font-size: 0.8em;
+        width: 95%;
+        gap: 0.2em;
+    }
+    .walkthrough{
+        width: 70%;
+    }     
+}

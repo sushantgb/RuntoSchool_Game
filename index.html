@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run To School Game</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="runtoschool.css" type="text/css">
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/25d4b612b3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- main div -->
+    <div class="container">
+        <!-- landing section -->
+        <section class="landing">
+            <h2>Run to School</h2>
+            <div class="instructions">
+                <h3>Play game in landscape mode.</h3>
+                <p>When Game starts, a button keeps flickering and you need to click it to select progress/regress</p>
+                <p>If progress is clicked, you'll be moved to next stage</p>
+                <p>If regress is clicked, you'll be moved back to the previous stage</p>
+                <p>Reach the last phase to finish the game.</p>
+                <p>You have five lives to complete the task.</p>
+            </div>
+            <!-- start button -->
+            <button class="start">Start Game</button>
+        </section>
+        <!-- game section to display images -->
+        <section class="game">
+
+        </section>
+        <!-- section for game controls -->
+        <section class="control-values">
+            <div class="controls">
+                <!-- to display lives -->
+                <div class="lives">
+                    <p><i class="fa-solid fa-heart"></i></p> <span> 05 </span>
+                </div>
+                <!-- play button -->
+                <button class="selection"></button>
+                <!-- for instruction -->
+                <p class="message"></p>
+            </div>
+            <!-- to describe walkthrough -->
+            <div class="walkthrough">
+
+            </div>
+        </section>
+        <!-- result section -->
+        <section class="result">
+            <h1 class="outcome">Congratulations! You have reached to the school &#128526</h1>
+            <button class="replay">Replay</button>
+        </section>
+    </div>
+    <!-- js file -->
+    <script src="runtoschool.js" type="text/javascript"></script>
+</body>
+
+</html>
