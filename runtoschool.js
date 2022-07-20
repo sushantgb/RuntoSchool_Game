@@ -77,6 +77,7 @@ selectionBtn.addEventListener("click", () => {
             console.log(imageStage[i]);
             //when player reaches last image result page is displayed with a delay of 2 seconds
             if (i + 1 === (imageStage.length)) {
+                messageNote.style.display = "none";
                 setTimeout(() => {
                     resultPage.style.display = "flex";
                     gamePage.style.display = "none";
